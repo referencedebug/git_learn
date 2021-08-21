@@ -46,3 +46,6 @@ tip: 分支进行合并时，可以加上`--no-ff`参数，用于表示不采用
 当前分支工作没有完成的时候，可以使用`git stash`来保存现场，然后去修复bug, bug修复完成之后，再切回分支，然后使用`git stash pop`来恢复现场。  
 在master分支修复的bug，提交之后会有一个commit_id,从而也可使用`git cherry-pick commit_id`将改次提交带到其他的分支;  
 
+## feature分支管理
+* 如果需要开发一个新的功能时，需要和bug分支一样新建一个feature分支，如果需要丢弃一个还没有合并的分支，可以使用命令`git branch -D <name>`;
+
