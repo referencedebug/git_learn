@@ -41,3 +41,8 @@
 
 tip: 分支进行合并时，可以加上`--no-ff`参数，用于表示不采用`fast forward`模式进行合并，从而可以显示合并的历史。
 
+## bug 分支
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；  
+当前分支工作没有完成的时候，可以使用`git stash`来保存现场，然后去修复bug, bug修复完成之后，再切回分支，然后使用`git stash pop`来恢复现场。  
+在master分支修复的bug，提交之后会有一个commit_id,从而也可使用`git cherry-pick commit_id`将改次提交带到其他的分支;  
+
