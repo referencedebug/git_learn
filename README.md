@@ -21,3 +21,11 @@
 * 关联远程仓库，使用命令` git remote add origin git@server-name:path/repo-name.git`, 关联远程仓库时必须给远程仓库取个名字，一般都用 `origin`;
 * 将本地的分支与远程分支进行绑定, 使用命令 `git push --set-upstream origin main`;
 * 分支的重命名命令, 使用命令 `git branch -M <name>`;
+
+## 分支管理
+* 查看分支，`git branch`;
+* 创建分支, `git branch <name>`;
+* 切换分支, `git checkout <name> | git switch <name>`;  
+* 创建以及切换分支: `git checkout -b <name> | git switch -c <name>`;
+* 合并某分支到当前分支: `git merge <name>`;
+* 删除某分支: `git branch -d <name>`;
